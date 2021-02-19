@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="22dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#E2E2F1"
+        android:layout_width="380dp"
+        android:layout_height="108dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/polish_img"
+            android:layout_width="125dp"
+            android:layout_height="108dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/polish_car" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/polish_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/aref_regular_0"
+            android:textColor="#1B2A3B"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@id/polish_img"
+            app:layout_constraintTop_toTopOf="@id/polish_img"
+            tools:text="Exterior and Interior" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/aref_regular_0"
+            android:textColor="#3E6087"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/polish_img"
+            app:layout_constraintStart_toEndOf="@id/polish_img"
+            tools:text="@string/_50_l_e" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/tranparent"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:layout_constraintBottom_toBottomOf="@id/price_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/price_txt" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

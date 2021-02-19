@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Sharzad Cleaning Center</string>
+    <string name="welcome">Welcome</string>
+    <string name="sharzad_cleaning_center">Sharzad Cleaning Center</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Do not have an account?</string>
+    <string name="create_account">Create Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="name">Name</string>
+    <string name="car_model">Car Model</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="send_verify_code">Send Verify Code</string>
+    <string name="polish">Polish</string>
+    <string name="_50_l_e">50 L.E</string>
+    <string name="service_menu">services</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="my_services">My Services</string>
+</resources>

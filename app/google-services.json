@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "206128298537",
+    "project_id": "sharzad-cleaning-center",
+    "storage_bucket": "sharzad-cleaning-center.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206128298537:android:6112c3de5ee7734dd23a38",
+        "android_client_info": {
+          "package_name": "com.adnanabouelenein.sharzadcleaningcenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206128298537-4a3a87ej4j6hs3mn58lqqj6ufq9ol3lg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7iGDmp6OEmIlrApItLkl64gGLsKPvdHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206128298537-4a3a87ej4j6hs3mn58lqqj6ufq9ol3lg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mustang_image"
+            android:layout_width="310dp"
+            android:layout_height="206dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/mustang_view" />
+
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="310dp"
+            android:layout_height="206dp"
+            android:background="@drawable/gradient_background_third"
+            app:layout_constraintBottom_toBottomOf="@id/mustang_image"
+            app:layout_constraintCircleRadius="50dp"
+            app:layout_constraintEnd_toEndOf="@id/mustang_image"
+            app:layout_constraintStart_toStartOf="@id/mustang_image"
+            app:layout_constraintTop_toTopOf="@id/mustang_image" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/aref_regular_0"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/mustang_image"
+            app:layout_constraintTop_toTopOf="@id/mustang_image"
+            tools:text="Exterior" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aref_regular_0"
+            android:letterSpacing="0.1"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:text="Clean your car carefully" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
