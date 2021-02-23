@@ -114,4 +114,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,ServicesMenu.class);
         startActivity(intent);
     }
+
+    public void moveToForgotPassword(View view) {
+        startActivity(new Intent(MainActivity.this,  ForgotPassword.class));
+    }
 }

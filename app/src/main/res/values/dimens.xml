@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="translation_y">-180dp</dimen>
+    <dimen name="gradient_translation_Y">50dp</dimen>
+    <dimen name="main_text">32sp</dimen>
+    <dimen name="parent_margin_bottom_or_top">32dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="different_compnent_margin">16dp</dimen>
+    <dimen name="btn_differcenes">48dp</dimen>
+    <dimen name="image_btn_pos">328dp</dimen>
+    <dimen name="sub_text_size">16sp</dimen>
+    <dimen name="btn_text_size">20sp</dimen>
+    <dimen name="activity_title_size">24sp</dimen>
+
+</resources>

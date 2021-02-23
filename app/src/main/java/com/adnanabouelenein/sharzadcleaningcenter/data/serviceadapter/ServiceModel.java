@@ -10,6 +10,7 @@ public class ServiceModel {
     private int price;
     private int serviceImage;
 
+    public ServiceModel(){}
     public ServiceModel(String serviceName, int price, int serviceImage) {
         this.serviceName = serviceName;
         this.price = price;

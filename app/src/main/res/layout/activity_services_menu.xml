@@ -12,10 +12,10 @@
         android:id="@+id/rv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/service_menu_txt"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/different_compnent_margin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/service_menu_txt"
         tools:listitem="@layout/info_card_view" />
 
 
@@ -23,9 +23,9 @@
         android:id="@+id/rv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/rv2"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv2"
         tools:listitem="@layout/card_view_service" />
 
 
@@ -33,13 +33,13 @@
         android:id="@+id/service_menu_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="@dimen/different_compnent_margin"
+        android:layout_marginTop="@dimen/different_compnent_margin"
         android:fontFamily="@font/aref_regular_0"
         android:text="@string/service_menu"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="@dimen/activity_title_size"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,10 +47,10 @@
     <androidx.appcompat.widget.AppCompatImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:onClick="moveToMyServicesActivity"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/different_compnent_margin"
+        android:layout_marginEnd="@dimen/different_compnent_margin"
         android:background="@drawable/tranparent"
+        android:onClick="moveToMyServicesActivity"
         android:src="@drawable/ic_baseline_shopping_cart_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

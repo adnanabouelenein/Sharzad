@@ -22,6 +22,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Register extends AppCompatActivity {
 
@@ -51,7 +52,7 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                user.put("Full Name", activityRegisterBinding.name.getText().toString());
+                user.put("Full Name", Objects.requireNonNull(activityRegisterBinding.name.getText()).toString());
                 user.put("Phone Number", activityRegisterBinding.phoneNumber.getText().toString());
                 user.put("Email", activityRegisterBinding.emailEdt.getText().toString());
                 user.put("Password", activityRegisterBinding.passwordEdtCo.getText().toString());

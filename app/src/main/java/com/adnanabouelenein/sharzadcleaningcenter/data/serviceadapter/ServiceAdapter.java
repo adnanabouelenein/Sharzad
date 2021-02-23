@@ -18,7 +18,7 @@ import com.adnanabouelenein.sharzadcleaningcenter.R;
 
 import java.util.ArrayList;
 
-public class  ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.MyViewHolder> {
+public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.MyViewHolder> {
 
     private ArrayList<ServiceModel> serviceModels;
     private Activity activity;
@@ -28,7 +28,7 @@ public class  ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.MyViewH
         this.onItemClick = onItemClick;
     }
 
-    public interface OnItemClick{
+    public interface OnItemClick {
         void onItemClick(int position);
     }
 
@@ -42,7 +42,7 @@ public class  ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.MyViewH
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = activity.getLayoutInflater();
-        View v = layoutInflater.inflate(R.layout.card_view_service, parent,false);
+        View v = layoutInflater.inflate(R.layout.card_view_service, parent, false);
         MyViewHolder myViewHolder = new MyViewHolder(v, onItemClick);
         return myViewHolder;
     }
@@ -50,15 +50,6 @@ public class  ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.MyViewH
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        /*holder.plus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myService = new Intent(activity, MyServicesActivity.class);
-                myService.putExtra("ARRAYLIST",serviceModels.get(position));
-                Log.d("data", "Data: " + serviceModels.get(position).getServiceName());
-                activity.startActivity(myService);
-            }
-        });*/
         holder.serviceImage.setImageResource(serviceModels.get(position).getServiceImage());
         holder.serviceName.setText(serviceModels.get(position).getServiceName());
         holder.servicePrice.setText(Integer.toString(serviceModels.get(position).getPrice()) + " L.E");
@@ -69,12 +60,13 @@ public class  ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.MyViewH
         return serviceModels.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+    public class MyViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView serviceImage;
         private TextView serviceName;
         private TextView servicePrice;
         private ImageButton plus;
+
         public MyViewHolder(@NonNull View itemView, OnItemClick listener) {
             super(itemView);
 
